@@ -17,7 +17,7 @@ function calcularPromedio() {
         return;  
     }else if (n1 > 7 || n2 > 7 || n3 > 7 || n4 > 7 || n5 > 7 || n6 > 7) {
         alert("no se permiten numeros mayores a 7")
-    } else if (n1 <= 0 || n2 <= 0 || n3 <= 0 || n4 <= 0 || n5 <= 0 || n6 <= 0) {
+    } else if (n1 < 1 || n2 < 1 || n3 < 1 || n4 < 1 || n5 < 1 || n6 < 1) {
     alert("no se permiten numeros inferiores a 1")
     } else if(nombre == "" || modulo == "") {
         alert("no se permiten espacios vacios")
