@@ -1,0 +1,66 @@
+.container-fluid {
+    text-align: center;
+    font-family: "Comic Sans MS";
+}
+ #titulo {
+    background-color: rgb(95, 61, 61);
+    padding: 10px;
+
+ }
+ #cuerpo {
+    margin: 20px;
+ }
+ #cuerpo input {
+    width: 30%;
+    margin: 0 auto;
+ }
+ #cuerpo select {
+  width: 30%;
+    margin: 0 auto;
+ }
+ table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 30px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+#fila1 th {
+    background-color: black;
+    color: white;
+}
+button {
+    border-radius: 4px;
+    border-style: solid;
+    border-color: grey;
+    cursor: pointer;
+    width: 97%;
+    background-color: black;
+    color: white;
+}
+h1{
+    text-align: center;
+    background-color: rgb(95, 61, 61);
+    margin-top: 1%;  
+}
+img {
+  float: left;
+}
+#uno button {
+  width: 25%;
+}
+#uno input {
+  width: 75%;
+}
+h2 {
+  font-size: 50px;
+  text-align: center;
+}

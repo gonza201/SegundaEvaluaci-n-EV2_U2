@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resultadoPromedio</title>
+</head>
+<link rel="stylesheet" href="./assets/css/estilos.css">
+<body>
+    <h1>Resultado del Promedio</h1>
+    <div id="resultContainer" class="result-container"></div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const nombreES = urlParams.get('nombreES')
+        const asignatura = urlParams.get('asignatura')
+        const promedio = urlParams.get('promedio')
+        const N1_U1 = urlParams.get('N1-U1')
+        const N2_U1 = urlParams.get('N2-U1')
+        const N1_U2 = urlParams.get('N1-U2')
+        const N2_U2 = urlParams.get('N2-U2')
+        const N1_U3 = urlParams.get('N1-U3')
+        const N2_U3 = urlParams.get('N2-U3')
+        const u1 = urlParams.get('u1')
+        const u2 = urlParams.get('u2')
+        const u3 = urlParams.get('u3')
+
+        const resultContainer = document.getElementById('resultContainer');
+        resultContainer.innerHTML = `
+        
+        <table>
+        <tr>
+            <th>Nombre:</th>
+            <th>${nombreES}</th>
+        </tr>
+        <tr> 
+            <th>asignatura:</th>
+            <th>${asignatura}</th>
+        </tr>   
+        <tr>
+            <th>N1-U1</th>
+            <th>${N1_U1} (12%)</th>
+        </tr>
+        <tr>
+            <th>N2-U1:</th>
+            <th>${N2_U1} (21%)</th>
+        </tr>
+        <tr>
+            <th>N1-U2:</th>
+            <th>${N1_U2} (12%)</th>
+        </tr>
+        <tr>
+            <th>N2-U2:</th>
+            <th>${N2_U2} (21%)</th>
+        </tr>
+        <tr>
+            <th>N1-U3:</th>
+            <th>${N1_U3} (13%)</th>
+        </tr>
+        <tr>
+            <th>N2-U3:</th>
+            <th>${N2_U3} (21%)</th>
+        </tr>
+        <tr>
+            <th>Unidad 1:</th>
+            <th>${u1} (33%)</th>
+        </tr>
+        <tr>
+            <th>Unidad 2:</th>
+            <th>${u2} (33%)</th>
+        </tr>
+        <tr>
+            <th>Unidad 3:</th>
+            <th>${u3} (34%)</th>
+        </tr>
+         <tr>
+            <th>Promedio:</th>
+            <th>${promedio} (100%)</th>
+        </tr>
+    </table>
+    ${promedio >= 4.0 ? '<h2>!Aprovaste¡<h2/>':''}
+    ${promedio < 4.0 ? '<h2>!Reprovaste¡<h2/>':''}
+        `;
+            
+    </script>
+    
+</body>
+</html>
